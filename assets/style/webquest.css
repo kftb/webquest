@@ -1,0 +1,21 @@
+body {
+	background-color: #000;
+}
+
+#gameContainer {
+	width: 800px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+
+}
+
+#musicContainer {
+	width: 800px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+
+}
