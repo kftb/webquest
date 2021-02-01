@@ -1,0 +1,177 @@
+{
+	"general": {
+		"Text entry": "Click into the field with the mouse, hit Enter twice to confirm",
+		"Final text": "Hello [demo], I hope you enjoyed this little riddle. \n I will know by know that you solved it, but still let me know! \n Your reward is already waiting.",
+		"Post solve": "You have solved the mystery of the ",
+		"Prevent leave": "There remains so much to solve. I cannot leave yet.",
+		"Failed attempt": "Nothing happens...",
+		"Character choice": ", choose your character.",
+		"Movement instructions": "Use arrow keys to choose, space bar to confirm and to continue.",
+		"Confirmation": "Are you sure?\n  This cannot be changed anymore."
+	},
+	"conversations": {
+		"Gatekeeper": {
+			"name": "Gatekeeper",
+			"start": "1000",
+			"elements": {
+				"1000": {
+					"text": [
+						"Welcome [demo]! I am glad you have found your way to this place. I am the Gatekeeper. I am the guardian of this place of riddles."
+					],
+					"followups": ["1001"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1001": {
+					"text": [
+						"You have been sent here by a friend to collect your reward. Unfortunately, this gift does come with further trials."
+					],
+					"followups": ["1002"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1002": {
+					"text": [
+						"In order to succeed, you have to collect the five gems of power. Each comes with a trial of its own. To pass them, you will have to use your wits and smarts."
+					],
+					"followups": ["1003"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1003": {
+					"text": ["I will assist you within the realm of my abilities."],
+					"followups": ["1004"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1004": {
+					"text": [
+						"Each gem altar has an inscription, an initial point that will guide you along the way."
+					],
+					"followups": ["1005"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1005": {
+					"text": [
+						"You can leave this place and return, my memory reaches beyond this room and I will be here for the rest of eternity."
+					],
+					"followups": ["end"],
+					"next": ["1000"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1100": {
+					"text": [
+						"You passed all trials and released the gems. It was deemed to be impossible but with your wit and knowledge you have overcome them all."
+					],
+					"followups": ["1101"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1101": {
+					"text": [
+						"The creator of this riddle has been informed about your achievement."
+					],
+					"followups": ["1102"],
+					"next": ["1000"],
+					"speaker": ["Gatekeeper"]
+				},
+				"1102": {
+					"text": ["This will be your reward."],
+					"followups": ["final_end"],
+					"next": ["1100"],
+					"speaker": ["Gatekeeper"]
+				}
+			}
+		},
+		"Sapphire": {
+			"solution": "48d6215903dff56238e52e8891380c8f",
+			"name": "Sapphire",
+			"start": "1000",
+			"characteristic": "Sapphire is known to give purity of thoughts.",
+
+			"elements": {
+				"2000": {
+					"text": ["[demo] Roses are red, violets are..."],
+					"followups": ["end"],
+					"next": ["2000"],
+					"speaker": ["Sapphire Inscription"]
+				}
+			}
+		},
+		"Emerald": {
+			"solution": "9f27410725ab8cc8854a2769c7a516b8",
+			"name": "Emerald",
+			"start": "1000",
+			"characteristic": "Emerald is known to foster hopes and dreams.",
+			"elements": {
+				"3000": {
+					"text": ["[demo] What do you get when mixing yellow and blue?"],
+					"followups": ["end"],
+					"next": ["3000"],
+					"speaker": ["Sapphire Inscription"]
+				}
+			}
+		},
+		"Citrine": {
+			"solution": "3f24e567591e9cbab2a7d2f1f748a1d4",
+			"name": "Citrine",
+			"start": "1000",
+			"characteristic": "Citrine color is known to inspire loud laughter.",
+			"elements": {
+				"4000": {
+					"text": [
+						"[demo] What fruit is bright and yellow, and pretty sour if you bite into it?"
+					],
+					"followups": ["end"],
+					"next": ["4000"]
+				}
+			}
+		},
+		"Amethyst": {
+			"solution": "bb7aedfa61007447dd6efaf9f37641e3",
+			"name": "Amethyst",
+			"start": "1000",
+			"characteristic": "Amethyst is known to dissipate evil thoughts.",
+			"elements": {
+				"5000": {
+					"text": ["[demo] What color does an amethyst have?"],
+					"followups": ["end"],
+					"next": ["5000"]
+				}
+			}
+		},
+		"Ruby": {
+			"solution": "015f28b9df1bdd36427dd976fb73b29d",
+			"name": "Gatekeeper",
+			"start": "1000",
+			"characteristic": "Ruby is known to bring pure love and passion.",
+			"elements": {
+				"6000": {
+					"text": [
+						"[demo] Ruby is associated with which of the four elements?"
+					],
+					"followups": ["end"],
+					"next": ["6000"]
+				}
+			}
+		},
+		"Diamond": {
+			"name": "Gatekeeper",
+			"start": "1000",
+			"elements": {
+				"7000": {
+					"text": ["Send me the solution words."],
+					"followups": ["end"],
+					"next": ["7000"],
+					"speaker": ["Sapphire Inscription"]
+				}
+			}
+		},
+		"Your Mind": {
+			"name": "Gatekeeper",
+			"start": "1000",
+			"elements": {
+				"8000": {
+					"text": ["There remains too much to solve. I cannot leave yet."],
+					"followups": ["end"],
+					"next": ["8000"]
+				}
+			}
+		}
+	}
+}
