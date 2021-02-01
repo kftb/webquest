@@ -1,7 +1,10 @@
-# WebQuest
 ![WebQuest logo](assets/images/webquest.png?raw=true)
 
 A silly game to deliver gifts through five riddles, implemented as learning experience with PhaserJS
+
+## Demo
+
+Give it a try here: https://kftb.github.io/webquest/ 
 
 ## Installation
 
